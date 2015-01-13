@@ -1,7 +1,7 @@
 # frontend
 server {
     listen        80;
-    server_name   example.com;
+    server_name   yii2app;
     server_tokens off;
 
     client_max_body_size 128M;
@@ -10,7 +10,7 @@ server {
     access_log    /var/log/nginx/yii2-access.log;
     error_log     /var/log/nginx/yii2-error.log;
 
-    set           $host_path      "/vagrant/example.com";
+    set           $host_path      "/vagrant/yii2app";
     set           $yii_bootstrap  "index.php";
 
     root          $host_path/frontend/web;
@@ -67,7 +67,7 @@ server {
 # backend
 server {
     listen        80;
-    server_name   admin.example.com;
+    server_name   admin.yii2app;
     server_tokens off;
 
     client_max_body_size 128M;
@@ -76,7 +76,7 @@ server {
     access_log    /var/log/nginx/yii2-access.log;
     error_log     /var/log/nginx/yii2-error.log;
 
-    set           $host_path      "/vagrant/example.com";
+    set           $host_path      "/vagrant/yii2app";
     set           $yii_bootstrap  "index.php";
 
     root          $host_path/backend/web;
@@ -133,7 +133,7 @@ server {
 # test
 server {
     listen        80;
-    server_name   test.example.com;
+    server_name   test.yii2app;
     server_tokens off;
 
     client_max_body_size 128M;
@@ -142,7 +142,7 @@ server {
     access_log    /var/log/nginx/yii2-access.log;
     error_log     /var/log/nginx/yii2-error.log;
 
-    set           $host_path      "/vagrant/example.com";
+    set           $host_path      "/vagrant/yii2app";
     set           $yii_bootstrap  "index-test.php";
 
     root          $host_path/frontend/web;

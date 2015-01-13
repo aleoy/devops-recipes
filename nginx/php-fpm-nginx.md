@@ -74,7 +74,8 @@ listen = 127.0.0.1:9000
 [...]
 #include=/opt/php-5.6/etc/pool.d/*.conf
 
-sudo cp sapi/fpm/init.d.php-fpm /etc/init.d/php5.6.4-fpm
+sudo cp sapi/fpm/init.d.php-fpm /etc/init.d/php-fpm
+
 sudo chmod 755 /etc/init.d/php5.6.4-fpm
 
 sudo /etc/init.d/php5.6.4-fpm start
