@@ -40,7 +40,7 @@ chmod +x $APP_ROOT/tests/codeception/bin/yii
 $APP_ROOT/tests/codeception/bin/yii migrate
 ```
 
-From now on the path of the file to be edited will contain the path branch "frontend", this is due to the fact that yii2 advanced application makes two separate applications "backend" and "frontend" sharing some commong code and configuration (folder "common").
+From now on the path of the file to be edited will contain the path branch "frontend", this is due to the fact that yii2 advanced application makes two separate applications "backend" and "frontend" sharing some common code and configuration (folder "common").
 
 The following steps will handle the "frontend" test suite, in order to setup the "backend" the same steps from now on should be performed againg once the partial path has been changed to point to the "backend" *(steps 5-7)*
 

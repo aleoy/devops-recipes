@@ -49,11 +49,3 @@ echo 'alias cept="/vagrant/yii2app/vendor/bin/codecept"' >> ~/.profile
 ```sh
 source ~/.profile
 ```
-
-#on $APP_ROOT
-cd /vagrant/yii2app/tests
-cept bootstrap
-cept build
-
-edit edit tests/acceptance.suite.yml
-set url accordingly for integration tests
