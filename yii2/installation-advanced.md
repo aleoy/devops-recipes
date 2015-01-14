@@ -43,11 +43,7 @@ composer require --dev "codeception/codeception: *" "codeception/specify: *" "co
 ```
 
 ```sh
-composer require "fzaninotto/faker:*"
-```
-
-```sh
-echo 'alias cept="/vagrant/yii2-base/vendor/bin/codecept"' >> ~/.profile
+echo 'alias cept="/vagrant/yii2app/vendor/bin/codecept"' >> ~/.profile
 ```
 
 ```sh
@@ -55,6 +51,7 @@ source ~/.profile
 ```
 
 #on $APP_ROOT
+cd /vagrant/yii2app/tests
 cept bootstrap
 cept build
 
