@@ -17,3 +17,4 @@ mysql> show variables WHERE variable_name like "col%";
 | collation_server     | utf8_unicode_ci |
 +----------------------+-----------------+
 
+[source](https://rtcamp.com/tutorials/mysql/character-sets-collations/)
